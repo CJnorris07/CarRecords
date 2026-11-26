@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Racing Sans One';
+  src: url('../fonts/RacingSansOne.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
     --bg-main: #0D0F12;
     --bg-panel: #161920;
@@ -16,7 +39,7 @@
 body {
     background-color: var(--bg-main);
     color: var(--text-main);
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Inter','Segoe UI', Roboto, sans-serif;
     line-height: 1.5;
     min-height: 100vh;
     display: flex;
@@ -341,4 +364,27 @@ body {
     background-color: var(--bg-panel);
     border-radius: 12px;
     border: 1px dashed var(--border);
+}
+h1, h2, h3,
+.intro h1,
+.records h2,
+.card-title,
+.car-summary h1,
+.specs-section h2 {
+    font-family: 'Montserrat', 'Segoe UI', sans-serif;
+    font-weight: 800;
+}
+.logo span,
+.card-speed,
+.car-main-stat .stat-value {
+    font-family: 'Racing Sans One', cursive !important;
+    font-weight: 400 !important;
+    font-style: normal;
+    letter-spacing: 1.5px;
+}
+.card-speed span,
+.car-main-stat .stat-value span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
